@@ -1,0 +1,10 @@
+neo4j_shrinked:
+  image: neo4j:latest
+  ports:
+  - "7474:7474"
+  - "7687:7687"
+  volumes:
+  - ${IMDB_DATA}:/var/lib/neo4j/import:ro
+#  - /4dev/projects/imdb-data/shrinked:/var/lib/neo4j/import:ro
+  environment:
+    NEO4J_AUTH: "none"

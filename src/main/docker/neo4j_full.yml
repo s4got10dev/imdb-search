@@ -1,0 +1,16 @@
+neo4j_full:
+  image: neo4j:latest
+  ports:
+  - "7474:7474"
+  - "7687:7687"
+  volumes:
+  - ${IMDB_DATA}:/var/lib/neo4j/import:ro
+#  - /4dev/projects/imdb-data/full:/var/lib/neo4j/import:ro
+  mem_limit: 12G
+  environment:
+    JAVA_OPTS: "-Xms8g -Xms8g"
+    NEO4J_AUTH: "none"
+    NEO4J_dbms_memory_pagecache_size: 4G
+    NEO4J_dbms_memory_heap_maxSize: 3G
+    NEO4J_dbms_memory_heap_max__size: 6G
+    NEO4J_dbms_memory_heap_initial__size: 1G
