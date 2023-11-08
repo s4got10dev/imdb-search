@@ -1,0 +1,38 @@
+# IMDb
+
+
+###
+# @name top-rated-for-genre
+GET /imdb/top-rated-for-genre?
+    genre=Short
+Host: localhost:8769
+
+###
+# @name is-actor-typecasted
+GET /imdb/is-actor-typecasted?
+    name=Fred Astaire
+Host: localhost:8769
+
+###
+# @name find-title
+GET /imdb/find-title?
+    title=The Matrix
+Host: localhost:8769
+
+###
+# @name find-coincidence
+GET /imdb/find-coincidence?
+    names=Keanu Reeves, Hugo Weaving, Carrie-Anne Moss
+
+Host: localhost:8769
+
+###
+# @name degree-of-separation
+GET /imdb/find-degree-of-separation?
+    name=Christopher Lee
+Host: localhost:8769
+
+###
+# @name omdbapi
+GET /?i=tt0133093&apikey=<YOUR_API_KEY>&plot=full HTTP/1.1
+Host: www.omdbapi.com
