@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "8db7fb85-5d5c-457c-8094-69c28e95aa21",
+		"name": "IMDb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "top-rated-for-genre",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8769/imdb/top-rated-for-genre?genre=Short",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8769",
+					"path": [
+						"imdb",
+						"top-rated-for-genre"
+					],
+					"query": [
+						{
+							"key": "genre",
+							"value": "Short"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "is-actor-typecasted",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8769/imdb/is-actor-typecasted?name=Fred Astaire",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8769",
+					"path": [
+						"imdb",
+						"is-actor-typecasted"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Fred Astaire"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find-title",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8769/imdb/find-title?title=The Matrix",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8769",
+					"path": [
+						"imdb",
+						"find-title"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "The Matrix"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find-coincidence",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8769/imdb/find-coincidence?names=Keanu Reeves, Hugo Weaving, Carrie-Anne Moss",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8769",
+					"path": [
+						"imdb",
+						"find-coincidence"
+					],
+					"query": [
+						{
+							"key": "names",
+							"value": "Keanu Reeves, Hugo Weaving, Carrie-Anne Moss"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "degree-of-separation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8769/imdb/find-degree-of-separation?name=Christopher Lee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8769",
+					"path": [
+						"imdb",
+						"find-degree-of-separation"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Christopher Lee"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "omdbapi",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://www.omdbapi.com/?i=tt0133093&apikey=<YOUR_API_KEY>&plot=full",
+					"protocol": "http",
+					"host": [
+						"www",
+						"omdbapi",
+						"com"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "i",
+							"value": "tt0133093"
+						},
+						{
+							"key": "apikey",
+							"value": "<YOUR_API_KEY>"
+						},
+						{
+							"key": "plot",
+							"value": "full"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

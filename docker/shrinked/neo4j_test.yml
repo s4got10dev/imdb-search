@@ -1,0 +1,13 @@
+version: "3.7"
+services:
+  neo4j_shrinked:
+    image: neo4j:4.4
+    container_name: neo4j_shrinked
+    ports:
+    - "27474:7474"
+    - "27687:7687"
+    user: '1000'
+    volumes:
+    - ${IMDB_DATA}:/var/lib/neo4j/import:ro
+    environment:
+      NEO4J_AUTH: "none"
