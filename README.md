@@ -19,14 +19,14 @@ See docker compose files in [docker](docker) folder.
 ### 📁 Data import
 *take a note that IMDB_DATA system variable should be set to folder where dataset files exists or should be downloaded*
 * [docker](docker) contains docker compose files which maps IMDB_DATA directory
-* [cql](backend/src/main/resources/cql) contains Cypher scripts that should be used for data import
+* [cql](data/cql) contains Cypher scripts that should be used for data import
 
 *from my experience scripts run faster if you are using [Neo4j browser](http://localhost:7474/browser/)*
 
 #### In the case of test database
-* [test-datasets](backend/src/main/resources/test-datasets) contains very small dataset for data import
+* [test-datasets](data/test-datasets) contains very small dataset for data import
 #### In the case of real database 
-* [prepare_datasets.sh](backend/src/main/resources/bash/prepare_datasets.sh) could help with downloading IMDb datasets 
+* [prepare_datasets.sh](data/bash/prepare_datasets.sh) could help with downloading IMDb datasets 
 and preparing them for import
 
 ## 🚀 Execution
