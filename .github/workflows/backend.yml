@@ -24,7 +24,7 @@ jobs:
       - name: "🔧 Validate Gradle wrapper"
         uses: gradle/wrapper-validation-action@v1.1.0
       - name: 🐘 Build with Gradle
-        uses: gradle/gradle-build-action@v2.11.0
+        uses: gradle/gradle-build-action@v2.11.1
         with:
           arguments: build
       - name: "💾 Upload artifacts"
