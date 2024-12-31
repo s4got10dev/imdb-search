@@ -34,7 +34,7 @@ jobs:
           path: |
             **/build/reports
       - name: "🧪 Publish Tests Report"
-        uses: mikepenz/action-junit-report@v4
+        uses: mikepenz/action-junit-report@v5
         with:
           report_paths: '**/build/test-results/test/*.xml'
           check_name: 'Test Report'
