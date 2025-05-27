@@ -13,9 +13,10 @@ module.exports = {
     platform: "github",
     assignees: [],
     baseBranches: [ "main" ],
-    automerge: false,
+    automerge: true,
     automergeType: "pr",
-    platformAutomerge: false,
+    platformAutomerge: true,
+    requiredStatusChecks: ["build"],
     gradle: {
         "enabled": true
     },
@@ -29,4 +30,11 @@ module.exports = {
     branchPrefix: 'renovate/',
     commitMessagePrefix: "renovate: 🖌",
     commitBody: "renovate-bot",
+    packageRules: [
+        {
+            matchPackagePatterns: [".*"],
+            groupName: "all dependencies",
+            groupSlug: "all-dependencies"
+        }
+    ]
 }
