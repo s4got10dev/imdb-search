@@ -12,7 +12,7 @@ jobs:
       - name: ⏳ Checkout
         uses: actions/checkout@v4.1.1
       - name: 🖌️ Self-hosted Renovate
-        uses: renovatebot/github-action@v42.0.4
+        uses: renovatebot/github-action@v42.0.5
         with:
           renovate-version: full
           configurationFile: config/renovate-config.js
