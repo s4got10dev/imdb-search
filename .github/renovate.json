@@ -1,18 +1,23 @@
 {
-    "extends": [
-        "config:base"
-    ],
-    "addLabels": ["type: dependency-upgrade"],
-    "schedule": [
-        "after 10pm every day"
-    ],
-    "prHourlyLimit": 1,
-    "prConcurrentLimit": 20,
-    "timezone": "Europe/Prague",
-    "packageRules": [
-        {
-            "matchPackagePatterns": ["actions.*"],
-            "dependencyDashboardApproval": true
-        }
-    ]
+  "extends": [
+    "config:base"
+  ],
+  "addLabels": ["type: dependency-upgrade"],
+  "schedule": ["every weekend"],
+  "timezone": "Europe/Warsaw",
+  "prHourlyLimit": 1,
+  "prConcurrentLimit": 20,
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["actions.*"],
+      "dependencyDashboardApproval": true
+    }
+  ],
+  "dependencyDashboard": true,
+  "enabledManagers": ["npm", "dockerfile", "github-actions"], 
+  "group": {
+    "all-dependencies": {
+      "packages": ["*"]
+    }
+  }
 }
